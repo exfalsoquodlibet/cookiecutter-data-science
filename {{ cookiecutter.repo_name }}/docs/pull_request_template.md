@@ -5,7 +5,7 @@ Brief summary.
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
-Based on the [AQA plan](somelink) for this project.
+Based on the AQA plan for this project (**references/aqa_plan.rm**).
 
 - [ ] Item 1
 - [ ] Item 2
@@ -14,8 +14,8 @@ Based on the [AQA plan](somelink) for this project.
 
 ## Assumptions and caveats
 
-- [ ] No changes to the [Assumptions and Caveats log](somelink)
-- [ ] Updated the [Assumptions and Caveats log](somelink); summary as follows:
+- [ ] No changes to the Assumptions and Caveats log (**references/assumptions_log.rm**)
+- [ ] Updated the Assumptions and Caveats log (**references/assumptions_log.rm**) - refer to item number:
 
 ## Issues and Comments
 Here are some issues/comments I want the peer reviewer to consider in addition to the AQA plan.
