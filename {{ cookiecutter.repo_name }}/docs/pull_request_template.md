@@ -7,10 +7,11 @@ Brief summary.
 
 Based on the AQA plan for this project (**references/aqa_plan.rm**).
 
-- [ ] Item 1
-- [ ] Item 2
-- [ ] Item 3
-- [ ] Item 4
+- [ ] B1 - Blabla
+- [ ] B2 - Blabla
+- [ ] B3 - Blublu
+- [ ] B4 - Blabla
+- [ ] ...
 
 ## Assumptions and caveats
 
