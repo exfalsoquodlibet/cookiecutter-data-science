@@ -9,14 +9,15 @@ Project Organization
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
-    ├── CONTRIBUTORS.md
+    ├── CONTRIBUTING.md    <- Guide to how potential contributors can help with your project 
     ├── data
     │   ├── external             <- Data from third party sources.
     │   ├── interim              <- Intermediate data that has been transformed.
     │   ├── processed            <- The final, canonical data sets for modeling.
     │   └── raw                  <- The original, immutable data dump.
     │
-    ├── docs                     <- A default Sphinx project; see sphinx-doc.org for details
+    ├── docs                            <- A default Sphinx project; see sphinx-doc.org for details
+    │   ├── pull_request_template.md    <- Pull request template
     │
     ├── models                   <- Trained and serialized models, model predictions, or model summaries
     │
@@ -26,7 +27,7 @@ Project Organization
     │
     ├── references               <- AQA plan, Assumptions log, data dictionaries, and all other explanatory materials
     │   └── aqa_plan.md          <- AQA plan for the project
-    │   └── assumptions_log.md   <- where to log key assumptions to data / model / analysis
+    │   └── assumptions_log.md   <- where to log key assumptions to data / models / analyses
     │
     ├── reports                  <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures              <- Generated graphics and figures to be used in reporting
