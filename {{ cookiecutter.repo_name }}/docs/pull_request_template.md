@@ -1,0 +1,21 @@
+<!--- Provide a general summary of your changes in the Title above -->
+Brief summary.
+
+## AQA Checklist:
+<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
+<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+
+Based on the [AQA plan](somelink) for this project.
+
+- [ ] Item 1
+- [ ] Item 2
+- [ ] Item 3
+- [ ] Item 4
+
+## Assumptions and caveats
+
+- [ ] No changes to the [Assumptions and Caveats log](somelink)
+- [ ] Updated the [Assumptions and Caveats log](somelink); summary as follows:
+
+## Issues and Comments
+Here are some issues/comments I want the peer reviewer to consider in addition to the AQA plan.
