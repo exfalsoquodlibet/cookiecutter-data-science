@@ -17,7 +17,7 @@ Project Organization
     │   └── raw                  <- The original, immutable data dump.
     │
     ├── docs                            <- A default Sphinx project; see sphinx-doc.org for details
-    │   ├── pull_request_template.md    <- Pull request template
+    │   └── pull_request_template.md    <- Pull request template
     │
     ├── models                   <- Trained and serialized models, model predictions, or model summaries
     │
@@ -26,7 +26,7 @@ Project Organization
     │                               `1.0-jqp-initial-data-exploration`.
     │
     ├── references               <- AQA plan, Assumptions log, data dictionaries, and all other explanatory materials
-    │   └── aqa_plan.md          <- AQA plan for the project
+    │   ├── aqa_plan.md          <- AQA plan for the project
     │   └── assumptions_log.md   <- where to log key assumptions to data / models / analyses
     │
     ├── reports                  <- Generated analysis as HTML, PDF, LaTeX, etc.
