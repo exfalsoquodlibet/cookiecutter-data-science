@@ -3,7 +3,7 @@
 _A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
 
-#### [Project homepage](http://exfalsoquodlibet.github.io/cookiecutter-data-science/)
+#### [Project homepage](http://ukgovdatascience.github.io/cookiecutter-data-science-gds/)
 
 
 ### Acknowledgment:
@@ -31,7 +31,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/exfalsoquodlibet/cookiecutter-data-science
+    cookiecutter https://github.com/ukgovdatascience/cookiecutter-data-science-gds
 
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
