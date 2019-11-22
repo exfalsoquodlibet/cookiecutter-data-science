@@ -34,7 +34,6 @@ $ conda install cookiecutter
     cookiecutter https://github.com/ukgovdatascience/cookiecutter-data-science-gds
 
 
-[![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
 
 
 ### The resulting directory structure
