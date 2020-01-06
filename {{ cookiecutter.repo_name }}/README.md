@@ -7,10 +7,19 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── CONTRIBUTING.md    <- Guide to how potential contributors can help with your project
-    ├── .env               <- Where to declare individual user environment variables 
+    │
+    ├── Makefile                <- Makefile with commands like `make data` or `make train`
+    │
+    ├── README.md               <- The top-level README for developers using this project.
+    │
+    ├── CONTRIBUTING.md         <- Guide to how potential contributors can help with your project
+    │
+    ├── .env                    <- Where to declare individual user environment variables
+    │
+    ├── .gitignore              <- Files and directories to be ignored by git
+    │
+    ├── test_environment.py     <- Python environment tester   
+    │
     ├── data
     │   ├── external             <- Data from third party sources.
     │   ├── interim              <- Intermediate data that has been transformed.
@@ -47,7 +56,7 @@ Project Organization
         │
         ├── make_models          <- Scripts to train models and then use trained models to make predictions
         │
-        ├── make_viz             <- Scripts to create exploratory and results oriented visualizations
+        ├── make_visualisations  <- Scripts to create exploratory and results oriented visualizations
         │
         └── tools                <- Any helper scripts go here
            
