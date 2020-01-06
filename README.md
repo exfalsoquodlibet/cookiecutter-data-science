@@ -13,7 +13,7 @@ This project builds on [drivendata's cookiecutter-data-science project template]
 
 ### Requirements to use the cookiecutter template:
 -----------
- - Python 2.7 or 3.5
+ - Python 3.6 or above
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
 ``` bash
@@ -44,13 +44,17 @@ The directory structure of your new project looks like this:
 ```
 ├── LICENSE
 │
-├── Makefile           <- Makefile with commands like `make data` or `make train`
+├── Makefile                <- Makefile with commands like `make data` or `make train`
 │
-├── README.md          <- The top-level README for developers using this project.
+├── README.md               <- The top-level README for developers using this project.
 │
-├── CONTRIBUTING.md    <- Guide to how potential contributors can help with your project
+├── CONTRIBUTING.md         <- Guide to how potential contributors can help with your project
 │
-├── .env               <- Where to declare individual user environment variables 
+├── .env                    <- Where to declare individual user environment variables
+│
+├── .gitignore              <- Files and directories to be ignored by git
+│
+├── test_environment.py     <- Python environment tester   
 │
 ├── data
 │   ├── external             <- Data from third party sources.
@@ -88,7 +92,7 @@ The directory structure of your new project looks like this:
     │
     ├── make_models          <- Scripts to train models and then use trained models to make predictions
     │
-    ├── make_viz             <- Scripts to create exploratory and results oriented visualizations
+    ├── make_visualisations  <- Scripts to create exploratory and results oriented visualizations
     │
     └── tools                <- Any helper scripts go here
       
