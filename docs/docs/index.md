@@ -178,9 +178,9 @@ the data folder is included in the `.gitignore` file.*** If you have a small amo
 may want to include the data in the repository. Github currently warns if files are over 50MB and rejects files over 
 100MB. Some other options for storing/syncing large data include [AWS S3](https://aws.amazon.com/s3/) with a syncing 
 tool (e.g., [`s3cmd`](http://s3tools.org/s3cmd)), [Git Large File Storage](https://git-lfs.github.com/), 
-[Git Annex](https://git-annex.branchable.com/), and [dat](http://dat-data.com/). Currently by default, we ask for an S3 
-bucket and use [AWS CLI](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html) to sync data in the `data` 
-folder with the server.
+[Git Annex](https://git-annex.branchable.com/), and [dat](http://dat-data.com/). ~~Currently by default, we ask for an 
+S3 bucket and use [AWS CLI](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html) to sync data in the `data` 
+folder with the server~~.
 
 ### Notebooks are for exploration and communication
 
@@ -298,11 +298,12 @@ DATABASE_URL = os.environ.get("DATABASE_URL")
 OTHER_VARIABLE = os.environ.get("OTHER_VARIABLE")
 ```
 
-#### AWS CLI configuration
-When using Amazon S3 to store data, a simple method of managing AWS access is to set your access keys to environment 
+#### AWS CLI configuration - **currently disabled**
+
+~~When using Amazon S3 to store data, a simple method of managing AWS access is to set your access keys to environment 
 variables. However, managing mutiple sets of keys on a single machine (e.g. when working on multiple projects) it is 
 best to use a [credentials file](https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html), typically 
-located in `~/.aws/credentials`. A typical file might look like:
+located in `~/.aws/credentials`. A typical file might look like:~~
 ```
 [default]
 aws_access_key_id=myaccesskey
@@ -312,8 +313,8 @@ aws_secret_access_key=mysecretkey
 aws_access_key_id=myprojectaccesskey
 aws_secret_access_key=myprojectsecretkey
 ```
-You can add the profile name when initialising a project; assuming no applicable environment variables are set, the 
-profile credentials will be used be default.
+~~You can add the profile name when initialising a project; assuming no applicable environment variables are set, the 
+profile credentials will be used be default.~~
 
 ### Be conservative in changing the default folder structure
 

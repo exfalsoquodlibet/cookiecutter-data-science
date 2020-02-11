@@ -5,7 +5,6 @@
 click
 Sphinx
 coverage
-awscli
 flake8
 {% if cookiecutter.python_interpreter != 'python3' %}
 
