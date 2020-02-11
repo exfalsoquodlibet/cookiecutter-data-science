@@ -8,13 +8,16 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 ### Acknowledgment:
 -----------
-This project builds on [drivendata's cookiecutter-data-science project template](http://drivendata.github.io/cookiecutter-data-science/) #cookiecutterdatascience
+This project builds on 
+[drivendata's cookiecutter-data-science project template](http://drivendata.github.io/cookiecutter-data-science/) 
+#cookiecutterdatascience
 
 
 ### Requirements to use the cookiecutter template:
 -----------
  - Python 3.6 or above
- - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
+ - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be 
+ installed with pip by or conda depending on how you manage your Python packages:
 
 ``` bash
 $ pip install cookiecutter
@@ -98,7 +101,8 @@ The directory structure of your new project looks like this:
       
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">
+cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
 ```
 
