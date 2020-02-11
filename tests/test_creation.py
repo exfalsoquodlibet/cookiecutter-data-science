@@ -87,6 +87,7 @@ class TestCookieSetup(object):
             'data/processed',
             'data/raw',
             'docs',
+            'docs/_static',
             'models',
             'notebooks',
             'references',
@@ -106,5 +107,4 @@ class TestCookieSetup(object):
 
         abs_expected_dirs = [str(self.path / d) for d in expected_dirs]
         abs_dirs, _, _ = list(zip(*os.walk(self.path)))
-        assert len(set(abs_expected_dirs + ignored_dirs) - set(abs_dirs)) == 0
-
+        assert len(set(abs_expected_dirs + ignored_dirs) ^ set(abs_dirs)) == 0
