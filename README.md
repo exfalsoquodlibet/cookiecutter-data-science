@@ -45,8 +45,9 @@ $ conda install cookiecutter
 The directory structure of your new project looks like this: 
 
 ```
-    ├── .env                          <- Where to declare individual user environment variables
+    ├── .envrc                        <- Where to declare individual user environment variables
     ├── .gitignore                    <- Files and directories to be ignored by git
+    ├── .secrets                      <- (optional) Where to store credentials - this will not be tracked by Git
     ├── CONTRIBUTING.md               <- Guide to how potential contributors can help with your project
     ├── LICENSE
     ├── Makefile                      <- Makefile with commands like `make data` or `make train`

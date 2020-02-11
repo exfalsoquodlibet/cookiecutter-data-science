@@ -114,8 +114,9 @@ cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ## Directory structure
 
 ```nohighlight
-    ├── .env                          <- Where to declare individual user environment variables
+    ├── .envrc                        <- Where to declare individual user environment variables
     ├── .gitignore                    <- Files and directories to be ignored by git
+    ├── .secrets                      <- (optional) Where to store credentials - this will not be tracked by Git
     ├── CONTRIBUTING.md               <- Guide to how potential contributors can help with your project
     ├── LICENSE
     ├── Makefile                      <- Makefile with commands like `make data` or `make train`
@@ -258,39 +259,42 @@ virtual machine with the requirements you need.
 You _really_ don't want to leak your AWS secret key or Postgres username and password on Github. Enough said — see the 
 [Twelve Factor App](http://12factor.net/config) principles on this point. Here's one way to do this:
 
-#### Store your secrets and config variables in a special file
+#### Store your secrets and config variables in separate special files
 
-Create a `.env` file in the project root folder. Thanks to the `.gitignore`, this file should never get committed into 
-the version control repository. Here's an example:
+A `.envrc` file is in the project root folder to store any project-related environmental variables. This relies on 
+[`direnv`](https://direnv.net/) to help keep environmental variables project-specific. Here's an example:
 
 ```nohighlight
-# example .env file
+# example .envrc file
+SOME_VARIABLE=something
+OTHER_VARIABLE=something_else
+```
+
+The current `.envrc` file already appends the working directory to the `PYTHONPATH` environment variable, which helps 
+notebooks in the `notebooks` folder to import `src` properly. **Do not store secrets in this file**, as it is tracked 
+by Git. 
+
+Instead, create a `.secrets` file to store your secrets, which will not be tracked by Git. Then, uncomment the 
+`source_env '.secrets'` line in `.envrc`. This will automatically import the untracked `.secrets` file for you to use. 
+Here's an example:
+
+```nohighlight
+# example .secrets file
 DATABASE_URL=postgres://username:password@localhost:5432/dbname
 AWS_ACCESS_KEY=myaccesskey
 AWS_SECRET_ACCESS_KEY=mysecretkey
-OTHER_VARIABLE=something
 ```
 
-#### Use a package to load these variables automatically.
+#### Use a package to load these variables automatically
 
-If you look at the stub script in `src/data/make_dataset.py`, it uses a package called 
-[python-dotenv](https://github.com/theskumar/python-dotenv) to load up all the entries in this file as environment 
-variables so they are accessible with `os.environ.get`. Here's an example snippet adapted from the `python-dotenv` 
-documentation:
+To use a specific environmental variables (and secrets) into your scripts, use `os.environ.get`. Here's an example:
 
 ```python
-# src/data/dotenv_example.py
+# src example Python script
 import os
-from dotenv import load_dotenv, find_dotenv
 
-# find .env automagically by walking up directories until it's found
-dotenv_path = find_dotenv()
-
-# load up the entries as environment variables
-load_dotenv(dotenv_path)
-
-database_url = os.environ.get("DATABASE_URL")
-other_variable = os.environ.get("OTHER_VARIABLE")
+DATABASE_URL = os.environ.get("DATABASE_URL")
+OTHER_VARIABLE = os.environ.get("OTHER_VARIABLE")
 ```
 
 #### AWS CLI configuration
