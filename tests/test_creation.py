@@ -47,7 +47,7 @@ class TestCookieSetup(object):
         assert no_curlies(readme_path)
         if pytest.param.get('project_name'):
             with open(readme_path) as fin:
-                assert 'DrivenData' == next(fin).strip()
+                assert '# DrivenData' == next(fin).strip()
 
     def test_setup(self):
         setup_ = self.path / 'setup.py'

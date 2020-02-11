@@ -71,7 +71,8 @@ release = '0.1'
 exclude_patterns = [
     '_build',
     '_static',
-    'pull_request_template.md'
+    'pull_request_template.md',
+    'README.md'
 ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
