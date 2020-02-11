@@ -50,7 +50,7 @@ lint:
 # 	aws s3 sync s3://$(BUCKET)/data/ data/ --profile $(PROFILE)
 # endif
 
-## Set up python interpreter environment
+## Set up Python interpreter environment
 create_environment:
 ifeq (True,$(HAS_CONDA))
 		@echo ">>> Detected conda, creating conda environment."
@@ -66,7 +66,7 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
-## Test python environment is setup correctly
+## Test Python environment is setup correctly
 test_environment:
 	$(PYTHON_INTERPRETER) test_environment.py
 

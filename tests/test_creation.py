@@ -88,6 +88,7 @@ class TestCookieSetup(object):
             'data/raw',
             'docs',
             'docs/_static',
+            'docs/getting_started',
             'models',
             'notebooks',
             'references',

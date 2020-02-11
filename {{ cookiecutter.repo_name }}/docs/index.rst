@@ -9,8 +9,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   getting-started
-   commands
+   getting_started/README.md
 
 
 
