@@ -6,3 +6,5 @@ click
 Sphinx
 coverage
 flake8
+recommonmark
+sphinx-markdown-tables

@@ -25,14 +25,20 @@ import sys
 # (named 'sphinx.ext.*') or your custom ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
+    'sphinx_markdown_tables',
+    'recommonmark',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = '.rst'
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # The encoding of source files.
 # source_encoding = 'utf-8-sig'
@@ -63,7 +69,8 @@ release = '0.1'
 # files.
 exclude_patterns = [
     '_build',
-    '_static'
+    '_static',
+    'pull_request_template.md'
 ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
@@ -83,6 +90,12 @@ pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []
+
+
+# -- Options for autosummary output ------------------------------------------------------------------------------------
+
+# Set the autosummary to generate stub files
+autosummary_generate = True
 
 
 # -- Options for HTML output -------------------------------------------------------------------------------------------
