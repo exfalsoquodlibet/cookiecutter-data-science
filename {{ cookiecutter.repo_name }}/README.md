@@ -7,6 +7,7 @@ Project Organization
 ------------
 
     ├── .envrc                        <- Where to declare individual user environment variables
+    ├── .flake8                       <- Flake8 linting configuration file used in the GDS Way
     ├── .gitignore                    <- Files and directories to be ignored by git
     ├── .secrets                      <- (optional) Where to store credentials - this will not be tracked by Git
     ├── CONTRIBUTING.md               <- Guide to how potential contributors can help with your project
