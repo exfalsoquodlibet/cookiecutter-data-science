@@ -8,6 +8,7 @@
 #
 # All configuration values have a default; values that are commented out serve to show the default.
 
+from recommonmark.transform import AutoStructify
 import os
 import sys
 
@@ -255,3 +256,21 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 # texinfo_show_urls = 'footnote'
+
+
+# -- recommonmark.transform.AutoStructify function - MUST BE LAST IN conf.py -------------------------------------------
+
+# At the bottom of conf.py
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+        'auto_toc_maxdepth': 2,
+        'auto_toc_tree_section': None,
+        'enable_auto_toc_tree': True,
+        'enable_eval_rst': True,
+        'enable_math': True,
+        'enable_inline_math': True,
+        'commonmark_suffixes': ['.md'],
+        'url_resolver': lambda url: os.path.join('..', url),  # allows TOC trees in nested Markdown files
+        'known_url_schemes': None
+    }, True)
+    app.add_transform(AutoStructify)
