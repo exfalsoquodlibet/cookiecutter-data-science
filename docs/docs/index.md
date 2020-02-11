@@ -134,6 +134,8 @@ cookiecutter https://github.com/drivendata/cookiecutter-data-science
     │   └── raw                       <- The original, immutable data dump.
     │
     ├── docs                          <- A default Sphinx project; see sphinx-doc.org for details
+    │   ├── aqa_plan.md               <- AQA plan for the project
+    │   └── assumptions_log.md        <- where to log key assumptions to data / models / analyses
     │   └── pull_request_template.md  <- Pull request template
     │
     ├── models                        <- Trained and serialized models, model predictions, or model summaries
@@ -141,11 +143,6 @@ cookiecutter https://github.com/drivendata/cookiecutter-data-science
     ├── notebooks                     <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                                    the creator's initials, and a short `-` delimited description, e.g.
     │                                    `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references                    <- AQA plan, Assumptions log, data dictionaries, and all other explanatory 
-    │   │                                materials
-    │   ├── aqa_plan.md               <- AQA plan for the project
-    │   └── assumptions_log.md        <- where to log key assumptions to data / models / analyses
     │
     ├── reports                       <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures                   <- Generated graphics and figures to be used in reporting
