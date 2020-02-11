@@ -5,11 +5,13 @@ You can adapt this file completely to your liking, but it should at least contai
 
 # {{ cookiecutter.project_name }} documentation
 
-<!-- Header must be 'Contents' to generate Sphinx TOC -->
+Here is the documentation for the {{ cookiecutter.project_name }} project.
+
 ## Contents 
 
 * [Getting started](getting_started/README.md)
 * [Analytical Quality Assurance](aqa/README.md)
+* [Reference](reference/README.md)
 
 # Indices and tables
 

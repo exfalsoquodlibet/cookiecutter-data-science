@@ -90,6 +90,7 @@ class TestCookieSetup(object):
             'docs/_static',
             'docs/aqa',
             'docs/getting_started',
+            'docs/reference',
             'models',
             'notebooks',
             'reports',
