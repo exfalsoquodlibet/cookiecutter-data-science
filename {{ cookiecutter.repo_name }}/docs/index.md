@@ -9,6 +9,7 @@ You can adapt this file completely to your liking, but it should at least contai
 ## Contents 
 
 * [Getting started](getting_started/README.md)
+* [Analytical Quality Assurance](aqa/README.md)
 
 # Indices and tables
 
