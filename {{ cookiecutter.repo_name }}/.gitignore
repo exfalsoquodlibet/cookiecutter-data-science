@@ -52,12 +52,13 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+docs/reference/api/
 
 # PyBuilder
 target/
 
-# DotEnv configuration
-.env
+# Secrets file
+.secrets
 
 # Database
 *.db

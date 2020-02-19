@@ -1,22 +1,40 @@
-<!--- Provide a general summary of your changes in the Title above -->
-Brief summary.
+<!--
+Thank you for submitting a Pull Request!
 
-## AQA Checklist:
-<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
-<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+This is a template to help standardise Pull Requests (PRs) for our project. Please ensure it is complete before 
+submitting the PR. Editable text are shown in italics.
 
-Based on the AQA plan for this project (**references/aqa_plan.rm**).
+If you have any questions, please get in touch, or submit the PR first and add comments.
 
-- [ ] B1 - Blabla
-- [ ] B2 - Blabla
-- [ ] B3 - Blublu
-- [ ] B4 - Blabla
-- [ ] ...
+Thanks again for your valued contributions!
+
+P.S. All relative Markdown links in this template refer to the `master` branch by default, and assume you are using 
+GitHub for PRs - please change these links as appropriate.
+-->
+
+<!-- 1. Add a brief summary of your changes here -->
+_Brief summary_
+
+## Analytical Quality Assurance (AQA) checklist:
+
+Based on the 
+[Aqua book](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government), 
+our [AQA Plan](/{{cookiecutter.user_name}}/{{cookiecutter.repo_name}}/blob/master/docs/aqa/aqa_plan.md) suggests the
+following tasks should be completed for each Pull Request (where relevant):
+
+<!-- 2. Mark `x` in all the boxes that apply in this checklist, and add details (if any) -->
+- [ ] _B1 - AQA task B1_
+
+_Further details_
 
 ## Assumptions and caveats
 
-- [ ] No changes to the Assumptions and Caveats log (**references/assumptions_log.rm**)
-- [ ] Updated the Assumptions and Caveats log (**references/assumptions_log.rm**) - refer to item number:
+<!-- 3. Confirm any changes to assumptions and caveats, and list by item number-->
+- [ ] [Assumptions and Caveats log](/{{cookiecutter.user_name}}/{{cookiecutter.repo_name}}/blob/master/docs/aqa/assumptions_log.md) 
+      has no changes **or** changes are listed below, by item number
+
+_Assumptions and Caveats log changes by item number_
 
 ## Issues and Comments
-Here are some issues/comments I want the peer reviewer to consider in addition to the AQA plan.
+<!-- 4. (If relevant) add any additional issues/comments for the Reviewer(s) here -->
+
