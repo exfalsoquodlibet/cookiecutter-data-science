@@ -69,10 +69,10 @@ class TestCookieSetup(object):
         else:
             assert p == 'MIT'
 
-    def test_requirements(self):
-        reqs_path = self.path / 'requirements.txt'
-        assert reqs_path.exists()
-        assert no_curlies(reqs_path)
+    # def test_requirements(self):
+    #     reqs_path = self.path / 'requirements.txt'
+    #     assert reqs_path.exists()
+    #     assert no_curlies(reqs_path)
 
     def test_makefile(self):
         makefile_path = self.path / 'Makefile'
@@ -110,3 +110,12 @@ class TestCookieSetup(object):
         abs_expected_dirs = [str(self.path / d) for d in expected_dirs]
         abs_dirs, _, _ = list(zip(*os.walk(self.path)))
         assert len(set(abs_expected_dirs + ignored_dirs) ^ set(abs_dirs)) == 0
+
+    def test_pull_request_template(self):
+        pull_request_template_path = self.path / 'docs/pull_request_template.md'
+        assert pull_request_template_path.exists()
+        assert no_curlies(pull_request_template_path)
+        if pytest.param.get('project_name') and pytest.param.get('author_name'):
+            with open(pull_request_template_path, 'r') as fin:
+                pull_request_template_data = fin.read()
+            assert len(pull_request_template_data.split('(/DrivenData/drivendata/blob/master/docs/aqa/')) > 1

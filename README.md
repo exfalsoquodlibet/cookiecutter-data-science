@@ -2,16 +2,13 @@
 
 _A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
-
 #### [Project homepage](http://ukgovdatascience.github.io/cookiecutter-data-science-gds/)
-
 
 ### Acknowledgment:
 
 This project builds on 
 [drivendata's cookiecutter-data-science project template](http://drivendata.github.io/cookiecutter-data-science/) 
 #cookiecutterdatascience
-
 
 ### Requirements to use the cookiecutter template:
 
@@ -30,13 +27,12 @@ $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
 
-
 ### To start a new project, run:
 
     cookiecutter https://github.com/ukgovdatascience/cookiecutter-data-science-gds
 
-
-
+Then make sure to complete the relevant Analytical Quality Assurance (AQA) documents - instructions can be found 
+[here]({{%20cookiecutter.repo_name%20}}/docs/README.md#getting-started).
 
 ### The resulting directory structure
 

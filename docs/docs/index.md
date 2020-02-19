@@ -93,7 +93,7 @@ folder for example, and the Sphinx documentation skeleton in `docs`).
 
 ### Requirements
 
- - Python 2.7 or 3.5
+ - Python 3.6 or above
  - [cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: 
    `pip install cookiecutter`
 
@@ -106,6 +106,9 @@ cookiecutter will do it for you.
 ```nohighlight
 cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ```
+
+Then make sure to complete the relevant Analytical Quality Assurance (AQA) documents - instructions can be found in the 
+"Getting started" section of the project's `docs/README.md`.
 
 ### Example
 
