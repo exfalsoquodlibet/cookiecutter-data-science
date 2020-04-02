@@ -5,14 +5,17 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 #### [Project homepage](http://ukgovdatascience.github.io/cookiecutter-data-science-gds/)
 
+### Acknowledgment
 
-### Acknowledgment:
 -----------
+
 This project builds on [drivendata's cookiecutter-data-science project template](http://drivendata.github.io/cookiecutter-data-science/) #cookiecutterdatascience
 
 
 ### Requirements to use the cookiecutter template:
+
 -----------
+
  - Python 3.6 or above
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
@@ -29,17 +32,17 @@ $ conda install cookiecutter
 
 
 ### To start a new project, run:
+
 ------------
 
     cookiecutter https://github.com/ukgovdatascience/cookiecutter-data-science-gds
 
 
-
-
 ### The resulting directory structure
+
 ------------
 
-The directory structure of your new project looks like this: 
+The directory structure of your new project looks like this:
 
 ```
 ├── LICENSE
@@ -54,7 +57,7 @@ The directory structure of your new project looks like this:
 │
 ├── .gitignore              <- Files and directories to be ignored by git
 │
-├── test_environment.py     <- Python environment tester   
+├── test_environment.py     <- Python environment tester
 │
 ├── data
 │   ├── external             <- Data from third party sources.
@@ -104,11 +107,13 @@ The directory structure of your new project looks like this:
 
 
 ### Installing development requirements
+
 ------------
 
     pip install -r requirements.txt
 
 ### Running the tests
+
 ------------
 
     py.test tests
