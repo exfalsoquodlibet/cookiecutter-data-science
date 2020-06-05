@@ -1,6 +1,2 @@
-mkdocs
-mkdocs-cinder
-cookiecutter
-pytest
 detect-secrets==0.13.1
 pre-commit==2.1.1
